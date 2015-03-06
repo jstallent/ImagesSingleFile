@@ -1,0 +1,48 @@
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uid" version="3.0" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/ rendition: http://www.idpf.org/vocab/rendition/#">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+	<dc:title id="en_title" xml:lang="en-us">Single File Solution for Full-Screen Images with Captions</dc:title>
+		<meta refines="#en_title" property="title-type">main</meta>
+	<dc:creator id="creator_aut">Joshua Tallent</dc:creator>
+		<meta refines="#creator_aut" property="role" scheme="marc:relators">aut</meta>
+		<meta refines="#creator_aut" property="file-as">Tallent, Joshua</meta>
+	<dc:identifier id="uid">9783141592658</dc:identifier>
+		<meta property="dcterms:modified">2015-03-06T02:55:00Z</meta>
+		<meta refines="#uid" property="identifier-type" scheme="xsd:string">isbn</meta>
+	<dc:date>2014-11-05T01:50-06:00</dc:date>
+	<dc:description id="en_description" xml:lang="en-us">This is a sample book for EPUB 3 testing and development. The ISBN is for example purposes only.</dc:description>
+	<dc:language id="en_language">en-us</dc:language>
+	<dc:publisher id="en_publisher" xml:lang="en-us">eBook Architects</dc:publisher>
+	<dc:rights id="en_rights" xml:lang="en-us">Creation and design by eBook Architects, a service of Firebrand Technologies.</dc:rights>
+	<meta name="eBookCreators" content="eBook Architects - a service of Firebrand Technologies" />
+	<meta property="rendition:spread">auto</meta>
+	<meta property="ibooks:specified-fonts">true</meta>
+	<meta property="ibooks:version">1.0</meta>
+	<meta name="cover" content="coverimage" />
+</metadata>
+
+<manifest>
+	<item id="ncx" media-type="application/x-dtbncx+xml" href="toc.ncx"></item>
+	<item id="item1" media-type="application/xhtml+xml" href="01-cover.xhtml"></item>
+	<item id="item2" media-type="application/xhtml+xml" href="02-titlepage.xhtml"></item>
+	<item id="item3" media-type="application/xhtml+xml" href="03-TOC.xhtml" properties="nav"></item>
+	<item id="item4" media-type="application/xhtml+xml" href="04-def_p.xhtml"></item>
+	<item id="item5" media-type="application/xhtml+xml" href="05-scale_p.xhtml"></item>
+	<item id="item6" media-type="application/xhtml+xml" href="06-fig.xhtml"></item>
+	<item id="item7" media-type="application/xhtml+xml" href="07-fig_def_p.xhtml"></item>
+	<item id="item8" media-type="application/xhtml+xml" href="08-fig_scale_p.xhtml"></item>
+	<item id="portrait" href="images/portrait.jpg" media-type="image/jpeg"></item>
+	<item id="coverimage" href="cover.jpg" media-type="image/jpeg" properties="cover-image"></item>
+	<item id="css" href="styles.css" media-type="text/css"></item>
+</manifest>
+
+<spine toc="ncx">
+	<itemref idref="item1" properties="rendition:spread-none"/>
+	<itemref idref="item2"/>
+	<itemref idref="item3"/>
+	<itemref idref="item4" properties="rendition:spread-none"/>
+	<itemref idref="item5" properties="rendition:spread-none"/>
+	<itemref idref="item6"/>
+	<itemref idref="item7" properties="rendition:spread-none"/>
+	<itemref idref="item8" properties="rendition:spread-none"/>
+</spine>
+</package>

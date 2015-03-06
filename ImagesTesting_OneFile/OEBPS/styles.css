@@ -1,0 +1,167 @@
+/* ############################################# */
+/* ########## eBook Architects Styles ########## */
+/* ##  Copyright 2014 Firebrand Technologies  ## */
+/* ############################################# */
+
+/* ############################################# */
+/* ############### Default Styles ############## */
+/* ############################################# */
+body {
+	margin: 0;
+    padding: 0;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5em;
+    text-align: justify;
+    text-indent: 2em;
+    widows: 2;
+    orphans: 2;
+}
+
+
+/* ############################################# */
+/* ################### Headings ################ */
+/* ############################################# */
+h1, h2, h3, h4, h5, h6 {
+	page-break-after:avoid;
+	-epub-hyphens: none !important;
+	adobe-hyphenate: none !important;
+	hyphens: none !important;
+}
+h1 {text-align: center;}
+h2 {text-align: center;}
+h3 {text-align: center;}
+h4 {text-align: center;}
+h5 {text-align: left;}
+h6 {text-align: left;}
+.chapter {
+	margin-top: 20%;
+	font-family: sans-serif;
+}
+
+/* ############################################# */
+/* ################## Title Page ############### */
+/* ############################################# */
+.title {
+	font-size: 3em;
+	margin-top: 20%;
+	font-weight: bold;
+}
+.subtitle {
+	text-align: center;
+}
+.byline {
+    margin-top: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-indent: 0;
+    text-align: center;
+    font-style: italic;
+}
+.author {
+	text-indent: 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+/* ############################################# */
+/* ################### NAV doc ################# */
+/* ############################################# */
+nav[epub\:type~='landmarks'], nav[epub\:type~='page-list'] {
+   display: none;
+   visibility: hidden;
+}
+
+nav ol {
+	padding-left: 0;
+}
+ol.notlist li {
+	display: block;
+}
+nav ol li { /* toc1 */
+	text-align: left;
+    text-indent: -1.5em;
+    margin-left: 1.5em;
+}
+nav ol ol li { /* toc2 */
+	text-align: left;
+    text-indent: -1.5em;
+    margin-left: 3em;
+}
+
+
+/* ############################################# */
+/* ################### Images ################## */
+/* ############################################# */
+p#cover {
+	text-align: center;
+}
+img#coverimage {
+  padding: 0;
+  margin: 0;
+}
+
+/* ########### Full-screen images ########### */
+p.caption {
+	text-align: center;
+	text-indent: 0;
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0 10%;
+}
+p.credit {
+	text-align: right;
+	text-indent: 0;
+	font-size: 0.85em;
+	margin: 0 10%;
+}
+
+
+/* ########### No Scaling ########### */
+div.img_noscaling {
+	text-align: center;
+    margin: 0;
+    page-break-inside: avoid;
+}
+figure.img_noscaling {
+	display: block;
+	text-align: center;
+    margin: 0;
+    page-break-inside: avoid;
+}
+
+/* ########### Single File ########### */
+div.vh {
+	text-align: center;
+	margin: 0;
+	page-break-inside: avoid;
+}
+figure.vh {
+	display: block;
+	text-align: center;
+	margin: 0;
+	page-break-inside: avoid;
+}
+div.img_pct {
+	height: 80%;
+}
+img#img_vh {
+	height: 80%;
+}
+img#img_vh:only-of-type {
+	height: 80vh;
+}
+
+
+
+
+/* ############################################# */
+/* #################### Other ################## */
+/* ############################################# */
+em, i, .italic {font-style: italic;}
+strong, b, .bold {font-weight: bold;}
+
