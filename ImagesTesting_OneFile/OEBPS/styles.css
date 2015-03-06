@@ -135,12 +135,12 @@ figure.img_noscaling {
 }
 
 /* ########### Single File ########### */
-div.vh {
+div.img_fs_cap {
 	text-align: center;
 	margin: 0;
 	page-break-inside: avoid;
 }
-figure.vh {
+figure.img_fs_cap {
 	display: block;
 	text-align: center;
 	margin: 0;
