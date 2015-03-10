@@ -16,7 +16,7 @@
 	<meta name="eBookCreators" content="eBook Architects - a service of Firebrand Technologies" />
 	<meta property="rendition:spread">auto</meta>
 	<meta property="ibooks:specified-fonts">true</meta>
-	<meta property="ibooks:version">1.1</meta>
+	<meta property="ibooks:version">1.1.1</meta>
 	<meta name="cover" content="coverimage" />
 </metadata>
 
