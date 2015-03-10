@@ -25,26 +25,21 @@
 			<content src="03-TOC.xhtml"/>
 		</navPoint>
 		<navPoint id="navPoint-4" playOrder="4">
-			<navLabel><text>No scaling applied: Portrait</text></navLabel>
-			<content src="04-def_p.xhtml"/>
+			<navLabel><text>No scaling applied (default)</text></navLabel>
+			<content src="04-default.xhtml"/>
 		</navPoint>
 		<navPoint id="navPoint-5" playOrder="5">
-			<navLabel><text>Single File Solution: Portrait</text></navLabel>
-			<content src="05-scale_p.xhtml"/>
+			<navLabel><text>Percentage on Image</text></navLabel>
+			<content src="05-percent.xhtml"/>
 		</navPoint>
 		<navPoint id="navPoint-6" playOrder="6">
-			<navLabel><text>Figure Tag Testing</text></navLabel>
-			<content src="06-fig.xhtml"/>
+			<navLabel><text>Viewport on Image</text></navLabel>
+			<content src="06-viewport.xhtml"/>
 		</navPoint>
 		<navPoint id="navPoint-7" playOrder="7">
-			<navLabel><text>Figure Tag, No scaling applied: Portrait</text></navLabel>
-			<content src="07-fig_def_p.xhtml"/>
+			<navLabel><text>Single File Solution</text></navLabel>
+			<content src="07-both.xhtml"/>
 		</navPoint>
-		<navPoint id="navPoint-8" playOrder="8">
-			<navLabel><text>Figure Tag, Single File Solution: Portrait</text></navLabel>
-			<content src="08-fig_scale_p.xhtml"/>
-		</navPoint>
-
 
 	</navMap>
 

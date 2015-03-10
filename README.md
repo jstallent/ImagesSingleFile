@@ -3,6 +3,12 @@ Single file solution for full-screen images with captions
 
 This EPUB 3 file offers a not-too-complex solution for keeping a large image and a caption on the same screen.
 
+Essentially, all major reading systems support either using percentages on image tags to scale the image to less than the height of the screen, or using viewport sizes (vh) to do the same thing. This solution allows you to effectively apply both to any large image, giving you the ability to have large images with captions that stay on the same screen. 
+
+A few assumptions: 
+1. The image must start at the top of a page/screen. If necessary, place it at the top of an HTML file.
+2. The viewport height units only work on newer devices. It is applied using a CSS 3 pseudo-class, :only-of-type. The assumption is that if a reading system supports the pseudo-class it will also support the viewport unit. This has proven to be true in all systems tested.
+
 It has been tested and works in all of the following reading systems:
 - ADE 3.0.86137 on PC running Windows 7
 - ADE 4.0.3.110333 on PC running Windows 7

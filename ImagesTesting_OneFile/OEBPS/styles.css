@@ -105,7 +105,7 @@ img#coverimage {
   margin: 0;
 }
 
-/* ########### Full-screen images ########### */
+/* ########### Captions ########### */
 p.caption {
 	text-align: center;
 	text-indent: 0;
@@ -113,50 +113,38 @@ p.caption {
 	font-weight: bold;
 	margin: 0 10%;
 }
-p.credit {
-	text-align: right;
-	text-indent: 0;
-	font-size: 0.85em;
-	margin: 0 10%;
-}
 
 
-/* ########### No Scaling ########### */
-div.img_noscaling {
-	text-align: center;
-    margin: 0;
-    page-break-inside: avoid;
-}
-figure.img_noscaling {
-	display: block;
-	text-align: center;
-    margin: 0;
-    page-break-inside: avoid;
-}
-
-/* ########### Single File ########### */
+/* ########### Container ########### */
 div.img_fs_cap {
 	text-align: center;
 	margin: 0;
 	page-break-inside: avoid;
 }
-figure.img_fs_cap {
-	display: block;
-	text-align: center;
-	margin: 0;
-	page-break-inside: avoid;
+/* If you use figure, be sure to add display:block; for older reading systems */
+
+/* ########### Percentage ########### */
+img.percent {
+	height: 80%;
+	width: auto;
 }
+
+/* ########### Viewport ########### */
+img.viewport {
+	height: 70vh;
+}
+
+/* ########### Single File ########### */
 div.img_pct {
 	height: 80%;
 }
 img#img_vh {
 	height: 80%;
 }
-img#img_vh:only-of-type {
+
+img#img_vh:only-of-type { /*overrides the previous setting, but only in newer systems that support CSS3 */
 	height: 80vh;
 }
-
-
 
 
 /* ############################################# */

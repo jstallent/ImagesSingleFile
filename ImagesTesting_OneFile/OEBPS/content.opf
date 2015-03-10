@@ -6,7 +6,7 @@
 		<meta refines="#creator_aut" property="role" scheme="marc:relators">aut</meta>
 		<meta refines="#creator_aut" property="file-as">Tallent, Joshua</meta>
 	<dc:identifier id="uid">9783141592658</dc:identifier>
-		<meta property="dcterms:modified">2015-03-06T02:55:00Z</meta>
+		<meta property="dcterms:modified">2015-03-09T10:24:00Z</meta>
 		<meta refines="#uid" property="identifier-type" scheme="xsd:string">isbn</meta>
 	<dc:date>2014-11-05T01:50-06:00</dc:date>
 	<dc:description id="en_description" xml:lang="en-us">This is a sample book for EPUB 3 testing and development. The ISBN is for example purposes only.</dc:description>
@@ -16,7 +16,7 @@
 	<meta name="eBookCreators" content="eBook Architects - a service of Firebrand Technologies" />
 	<meta property="rendition:spread">auto</meta>
 	<meta property="ibooks:specified-fonts">true</meta>
-	<meta property="ibooks:version">1.0</meta>
+	<meta property="ibooks:version">1.1</meta>
 	<meta name="cover" content="coverimage" />
 </metadata>
 
@@ -25,11 +25,10 @@
 	<item id="item1" media-type="application/xhtml+xml" href="01-cover.xhtml"></item>
 	<item id="item2" media-type="application/xhtml+xml" href="02-titlepage.xhtml"></item>
 	<item id="item3" media-type="application/xhtml+xml" href="03-TOC.xhtml" properties="nav"></item>
-	<item id="item4" media-type="application/xhtml+xml" href="04-def_p.xhtml"></item>
-	<item id="item5" media-type="application/xhtml+xml" href="05-scale_p.xhtml"></item>
-	<item id="item6" media-type="application/xhtml+xml" href="06-fig.xhtml"></item>
-	<item id="item7" media-type="application/xhtml+xml" href="07-fig_def_p.xhtml"></item>
-	<item id="item8" media-type="application/xhtml+xml" href="08-fig_scale_p.xhtml"></item>
+	<item id="item4" media-type="application/xhtml+xml" href="04-default.xhtml"></item>
+	<item id="item5" media-type="application/xhtml+xml" href="05-percent.xhtml"></item>
+	<item id="item6" media-type="application/xhtml+xml" href="06-viewport.xhtml"></item>
+	<item id="item7" media-type="application/xhtml+xml" href="07-both.xhtml"></item>
 	<item id="portrait" href="images/portrait.jpg" media-type="image/jpeg"></item>
 	<item id="coverimage" href="cover.jpg" media-type="image/jpeg" properties="cover-image"></item>
 	<item id="css" href="styles.css" media-type="text/css"></item>
@@ -41,8 +40,7 @@
 	<itemref idref="item3"/>
 	<itemref idref="item4" properties="rendition:spread-none"/>
 	<itemref idref="item5" properties="rendition:spread-none"/>
-	<itemref idref="item6"/>
+	<itemref idref="item6" properties="rendition:spread-none"/>
 	<itemref idref="item7" properties="rendition:spread-none"/>
-	<itemref idref="item8" properties="rendition:spread-none"/>
 </spine>
 </package>
